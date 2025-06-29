@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.geometry.Insets?>
+
+<VBox xmlns:fx="http://javafx.com/fxml" fx:controller="client.ChatController" spacing="10" alignment="TOP_CENTER" stylesheets="@chat-style.css">
+    <padding><Insets top="10" right="10" bottom="10" left="10"/></padding>
+
+    <TextArea fx:id="chatArea" editable="false" prefHeight="300"/>
+    <HBox spacing="10">
+        <TextField fx:id="messageField" promptText="Tapez votre message..." HBox.hgrow="ALWAYS"/>
+        <Button fx:id="Button" text="Envoyer" onAction="#handleSend"/>
+    </HBox>
+</VBox>
