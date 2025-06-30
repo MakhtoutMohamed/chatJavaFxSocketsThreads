@@ -43,6 +43,7 @@ public class ChatController {
         String message = messageField.getText().trim();
         if (!message.isEmpty()) {
             writer.println("Client: " + message);
+            //writer.println(message);
             messageField.clear();
         }
     }
